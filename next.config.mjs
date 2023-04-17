@@ -12,6 +12,8 @@ const config = {
   // @see https://react.dev/blog/2022/03/29/react-v18#new-strict-mode-behaviors
   reactStrictMode: false,
 
+  experimental: { appDir: true },
+
   /**
    * If you have the "experimental: { appDir: true }" setting enabled, then you
    * must comment the below `i18n` config out.

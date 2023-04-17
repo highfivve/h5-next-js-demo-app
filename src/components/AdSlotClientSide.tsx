@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import { executeMoliCommand } from "~/ads/refreshAdSlot";
 
@@ -7,7 +8,8 @@ export type AdSlotClientSideProps = {
 
 export const AdSlotClientSide: React.FC<AdSlotClientSideProps> = ({ id }) => {
   useEffect(() => {
-    executeMoliCommand(moli => moli.refreshAdSlot(id));
+    console.log("refreshAdSlot", id);
+    executeMoliCommand((moli) => moli.refreshAdSlot(id));
   }, [id]);
   return (
     <div id={id} className="min-h-[250px] min-w-[300px]">
