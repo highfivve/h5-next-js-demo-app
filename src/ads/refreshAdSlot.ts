@@ -1,4 +1,5 @@
 export type MoliTag = {
+  requestAds(): Promise<void>;
   refreshAdSlot(domId: string): void;
 };
 

@@ -12,7 +12,7 @@ export const AdSlotClientSide: React.FC<AdSlotClientSideProps> = ({ id }) => {
     executeMoliCommand((moli) => moli.refreshAdSlot(id));
   }, [id]);
   return (
-    <div id={id} className="min-h-[250px] min-w-[300px]">
+    <div id={id} className="min-h-[250px] min-w-[300px] text-gray-800">
       Ad Slot here
     </div>
   );

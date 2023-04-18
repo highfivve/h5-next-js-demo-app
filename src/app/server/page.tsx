@@ -9,8 +9,10 @@ const PrivacyPage: React.FC = () => {
   console.log("rendered!");
   return (
     <div className="flex gap-4">
-      <Card>A static ad slot</Card>
-      <Card>
+      <Card title="static div">
+        <div id="h5v_content_2"></div>
+      </Card>
+      <Card title="AdSlotClientSide component">
         <AdSlotClientSide id="h5v_content_1" />
       </Card>
     </div>
