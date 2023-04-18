@@ -14,11 +14,6 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       url: string,
       { shallow }: { shallow: boolean }
     ) => {
-      console.log(
-        `App is changing to ${url} ${
-          shallow ? "with" : "without"
-        } shallow routing`
-      );
       executeMoliCommand((moli) => moli.requestAds())
     };
 

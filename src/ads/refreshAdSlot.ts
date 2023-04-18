@@ -1,6 +1,6 @@
 export type MoliTag = {
   requestAds(): Promise<void>;
-  refreshAdSlot(domId: string): void;
+  refreshAdSlot(domId: string | string[]): void;
 };
 
 export type MoliCommand = (moli: MoliTag) => void;

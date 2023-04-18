@@ -12,6 +12,9 @@ export const Navbar: React.FC = () => {
       <Link className="underline" href="/client">
         Client Side
       </Link>
+      <Link className="underline" href="/skin">
+        Skin
+      </Link>
     </nav>
   );
 };
