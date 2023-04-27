@@ -31,7 +31,7 @@ export const SkinLayout: React.FC<PropsWithChildren> = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col items-center justify-center bg-blue-h5">
-        <div className="container flex flex-row items-start justify-center gap-12 px-4 py-16">
+        <div className="container hidden flex-row items-start justify-center gap-12 px-4 py-16 md:flex">
           <div
             id="h5v_sidebar_left"
             className="h-[600px]max-w-[300px] bg-white/10"

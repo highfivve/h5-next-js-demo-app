@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import { AdSlotClientSide } from "~/components/AdSlotClientSide";
+import { MobileStickyAd } from "~/components/MobileStickyAd";
 import { Card } from "~/components/Card";
 import { Navbar } from "~/components/Navbar";
 
@@ -18,7 +19,7 @@ const Home: NextPage = () => {
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
             highfivve <span className="text-pink-h5">Demo</span> App
           </h1>
-          <div className="flex min-w-full gap-4 md:gap-8">
+          <div className="flex min-w-full flex-wrap gap-4 md:gap-8">
             <Card title="ad slot 1">
               <AdSlotClientSide id="h5v_content_1" />
             </Card>

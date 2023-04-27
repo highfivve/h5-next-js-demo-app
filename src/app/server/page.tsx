@@ -8,7 +8,7 @@ export const metadata = {
 const PrivacyPage: React.FC = () => {
   console.log("rendered!");
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-wrap gap-4">
       <Card title="static div">
         <div id="h5v_content_2"></div>
       </Card>
