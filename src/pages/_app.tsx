@@ -27,11 +27,23 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     };
   }, [router]);
 
+  // initial request ads call - FIXME this is also present in ad adConfiguration.js
+  // useEffect(() => {
+  //   executeMoliCommand((moli) => moli.requestAds());
+  // });
+
   return (
     <>
-      <Script src="https://highfivve.github.io/moli-ad-tag/assets/js/latest.js" />
-      <Script src="/adConfiguration.js" />
+      {/* partytown generates the forwarder window.moli.que */}
+      <Script id="data-layer-test">{`
+        window.dataLayer.push(param => console.log('hello', param))`}</Script>
+      <Script
+        src="https://highfivve.github.io/moli-ad-tag/assets/js/latest.js"
+        strategy="worker"
+      />
+      <Script src="/adConfiguration.js" strategy="worker" />
       <Script id="h5v-request-ads">{`console.log("separate script tag");`}</Script>
+      <Script src="/partyDemo.js" strategy="worker" />
       <Component {...pageProps} />
       <MobileStickyAd id="h5v_mobile_sticky" />
     </>

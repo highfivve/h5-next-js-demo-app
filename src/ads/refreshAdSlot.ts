@@ -3,7 +3,7 @@ export type MoliTag = {
   refreshAdSlot(domId: string | string[]): void;
 };
 
-export type MoliCommand = (moli: MoliTag) => void;
+export type MoliCommand = (moli: MoliTag) => any;
 
 export type MoliQueue = {
   readonly que: {
@@ -16,6 +16,6 @@ declare const window: {
 };
 
 export const executeMoliCommand = (cmd: MoliCommand): void => {
-  window.moli = window.moli || { que: [] };
+  // window.moli = window.moli || { que: [] };
   window.moli.que.push(cmd);
 };

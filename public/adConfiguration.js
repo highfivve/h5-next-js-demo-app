@@ -1,3 +1,5 @@
+console.log("Running adConfiguration.js");
+
 window.moli = window.moli || { que: [] };
 
 window.moli.que.push((moli) => {

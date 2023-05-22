@@ -6,13 +6,15 @@
 
 /** @type {import("next").NextConfig} */
 const config = {
-
   // react renders componets twice
   // @see https://github.com/vercel/next.js/issues/35822
   // @see https://react.dev/blog/2022/03/29/react-v18#new-strict-mode-behaviors
   reactStrictMode: false,
 
-  experimental: { appDir: true },
+  experimental: {
+    appDir: true,
+    nextScriptWorkers: true,
+  },
 
   /**
    * If you have the "experimental: { appDir: true }" setting enabled, then you
