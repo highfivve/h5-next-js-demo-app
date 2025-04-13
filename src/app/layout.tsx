@@ -15,8 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script src="https://highfivve.github.io/moli-ad-tag/assets/js/latest.js" />
-        <Script src="/adConfiguration.js" />
+      <Script id="moli-ad-tag" src="https://cdn.h5v.eu/adtag/v5.3.4/all.mjs" data-publisher="local" data-endpoint="/api/config.json" />
       </head>
       <body>
         <Navbar />

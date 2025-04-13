@@ -29,8 +29,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
 
   return (
     <>
-      <Script src="https://highfivve.github.io/moli-ad-tag/assets/js/latest.js" />
-      <Script src="/adConfiguration.js" />
+      <Script id="moli-ad-tag" src="https://cdn.h5v.eu/adtag/v5.3.4/all.mjs" data-publisher-code="local" data-endpoint="localhost:3000/api" />
       <Script id="h5v-request-ads">{`console.log("separate script tag");`}</Script>
       <Component {...pageProps} />
       <MobileStickyAd id="h5v_mobile_sticky" />
